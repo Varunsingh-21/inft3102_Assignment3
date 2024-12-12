@@ -10,7 +10,7 @@ exports.handler = async (event) => {
         const { name, email, message, subject } = JSON.parse(event.body);
 
         // Define the recipients
-        const recipients = ['varunsingh151509@gmail.com','adam.kunz+inft@durhamcollege.ca'];
+        const recipients = ['varunsingh151509@gmail.com','adam.kunz@durhamcollege.ca'];
 
         // Define the email content
         const emailContent = {
