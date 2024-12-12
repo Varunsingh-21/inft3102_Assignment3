@@ -1,3 +1,6 @@
+// Name: VARUN DEEP SINGH
+// STUDENT ID: 100865156
+
 require('dotenv').config();
 const sgMail = require('@sendgrid/mail');
 
