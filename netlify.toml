@@ -1,3 +1,3 @@
 [build]
-publish = "src"          # Directory containing your site files (e.g., HTML, CSS)
+publish = "dist"          # Directory containing your site files (e.g., HTML, CSS)
 functions = "functions"  # Correct functions directory inside your project root
