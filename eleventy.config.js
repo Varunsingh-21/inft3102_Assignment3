@@ -39,7 +39,7 @@ module.exports=function(eleventyConfig){
     try{
       const STRAPI_BEARER_1 =process.env.STRAPI_BEARER_1
       // http://localhost:1337/api/mycollections?filters[type][$eq]=lion
-      const r =await fetch("http://localhost:1337/api/mycollections?populate=image&sort=createdAt:ASC",{ method: "GET",
+      const r =await fetch("https://honorable-serenity-0b100dacc0.strapiapp.com/api/mycollections?populate=image&sort=createdAt:ASC",{ method: "GET",
         headers: {
           "Content-Type": "application/json",
           "Authorization":`Bearer ${STRAPI_BEARER_1}`
@@ -95,7 +95,7 @@ module.exports=function(eleventyConfig){
   eleventyConfig.addGlobalData("strapi_posts", async () =>{
     try{
       const STRAPI_BEARER_2=process.env.STRAPI_BEARER_2
-      const r =await fetch("http://localhost:1337/api/writeupss?populate=image&sort=createdAt:DESC",{ method: "GET",
+      const r =await fetch("https://honorable-serenity-0b100dacc0.strapiapp.com/api/writeupss?populate=image&sort=createdAt:DESC",{ method: "GET",
         headers: {
           "Content-Type": "application/json",
           "Authorization":`Bearer ${STRAPI_BEARER_2}`
