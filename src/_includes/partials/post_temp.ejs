@@ -1,0 +1,10 @@
+<div class="card bg-dark text-white" style="height: 17rem; overflow: hidden;" >
+  <img src="http://localhost:1337/uploads/<%= item.image[0].hash %><%= item.image[0].ext %>" class="card-img" alt="..." style="width: 100%; height: 100%; object-fit: fill; opacity: 20%;">>
+    <div class="card-img-overlay">
+      <h3 class="card-title"><%= item.title%></h3>
+      <p class="card-text"><%= item.description%></p>
+      <p class="card-text">Published at: <%= new Date(item.publishedAt).toLocaleString() %>
+      </p>
+    </div>
+</div>
+<br>

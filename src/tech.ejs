@@ -1,0 +1,28 @@
+---
+title: tech shop
+layout: layouts/mylayout.ejs
+name: Varun Deep Singh
+date: 2024-11-20
+description: "My Blog"
+author: "VARUN DEEP SINGH"
+pagination:
+  data: collect
+  size: 1
+permalink: "tech/page-<%= pagination.pageNumber+1 %>/index.html"
+---
+<div class="filter-buttons">
+  <% collect.forEach(function(typeArray, index) { %>
+    <% if (index === 0) { %>
+      <a href="/tech/page-<%= index + 1 %>/" class="btn btn-primary">
+        All
+      </a>
+    <% } else { %>
+      <a href="/tech/page-<%= index + 1 %>/" class="btn btn-primary">
+        <%= typeArray[0].type.charAt(0).toUpperCase() + typeArray[0].type.slice(1) %>
+      </a>
+    <% } %>
+  <% }) %>
+</div>
+
+
+<%- include ('_includes/partials/a.ejs',{item: pagination.items[0]}) %>

@@ -1,0 +1,33 @@
+
+.varun{
+    color: rgb(0, 0, 0);
+    background-color: rgb(176, 199, 194);
+}
+
+body > div > nav > div {
+    max-width: 100%; 
+  }
+  body > div > nav > div > ol {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+body > div > div > div.col-lg-4.offset-lg-1.p-0.overflow-hidden.shadow-lg > img{
+  height: 70vh;
+  width: 100%;
+
+}
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+footer{
+
+  margin-top: auto;
+}
+
+

@@ -1,0 +1,9 @@
+
+<div class="container d-flex gap-5 flex-wrap">
+<% item.forEach(function(item) { %>
+  <%- include ('card.ejs',{item: item}) %> 
+<% }) %>
+</div>
+
+<%- include ('pagination.ejs') %> 
+<!-- for demo -->

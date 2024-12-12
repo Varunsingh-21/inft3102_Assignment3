@@ -1,0 +1,18 @@
+---
+title: Blog
+layout: layouts/mylayout.ejs
+name: Varun Deep Singh
+date: 2024-11-20
+description: "My Blog"
+author: "VARUN DEEP SINGH"
+pagination:
+  data: strapi_posts
+  size: 1
+permalink: "blog/page-<%= pagination.pageNumber+1 %>/index.html"
+---
+
+<% pagination.items.forEach(function(item) { %>
+  <a href="/posts/<%= item.title.replace(/[^a-z0-9]+/gi, '-').toLowerCase() %>" ><%- include ('_includes/partials/post_temp.ejs',{item: item}) %> </a>
+<% }) %>
+
+<%- include ('_includes/partials/pagination.ejs') %> 

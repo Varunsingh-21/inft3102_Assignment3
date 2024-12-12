@@ -1,0 +1,29 @@
+{
+    "name": "assignment-1",
+    "version": "1.0.0",
+    "description": "Hello, This is Assignment 1.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "npx @11ty/eleventy",
+        "dev": "npx @11ty/eleventy --serve",
+        "start:webhook": "node src/webhooks/app.js",
+        "start": "concurrently \"npm run dev\" \"npm run start:webhook\""
+    },
+    "author": "Varun Deep Singh (100865156)",
+    "license": "ISC",
+    "dependencies": {
+        "@11ty/eleventy": "^2.0.1",
+        "@sendgrid/mail": "^8.1.4",
+        "@tryghost/content-api": "^1.11.21",
+        "bootstrap": "^5.3.3",
+        "concurrently": "^7.0.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.1",
+        "fs": "^0.0.1-security",
+        "markdown-it": "^14.1.0",
+        "node-fetch": "^3.3.2",
+        "ors": "^1.0.0"
+    }
+}

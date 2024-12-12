@@ -1,0 +1,19 @@
+---
+title: Awesome Tech 
+layout: layouts/mylayout.ejs
+name: Varun Deep Singh
+tags: electronic
+pagination:
+  data: strapi_data
+  size: 5
+permalink: "strapi_data/page-<%= pagination.pageNumber+1 %>/index.html"
+---
+<div class="container d-flex gap-5 flex-wrap">
+<% pagination.items.forEach(function(item) { %>
+  <%- include ('_includes/partials/card.ejs',{item: item}) %> 
+<% }) %>
+</div>
+
+
+
+<%- include ('_includes/partials/pagination.ejs') %> 
