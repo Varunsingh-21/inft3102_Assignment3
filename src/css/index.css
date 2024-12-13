@@ -31,3 +31,17 @@ footer{
 }
 
 
+.transparent-box {
+  background-color: rgb(176, 199, 194); /* Slightly transparent box for contrast */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.hero {
+  background-color: rgb(176, 199, 194); 
+  padding: 40px/* Matching background for the hero section */
+}
+.card {
+  background-color: rgb(176, 199, 194); /* Cards with slight contrast for readability */
+  border: none;
+  border-radius: 10px;}
